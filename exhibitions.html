@@ -35,13 +35,23 @@
       text-decoration: none;
     }
 
+    summary {
+  list-style: none;
+  cursor: pointer;
+    }
+    
+    summary::-webkit-details-marker {
+  display: none;
+    }
+    
     summary::before {
-  content: "[+] ";
-}
-
-details[open] summary::before {
-  content: "[-] ";
-}
+  content: "+ ";
+    }
+    
+    details[open] summary::before {
+  content: "− ";
+    }
+    
   </style>
 </head>
 
